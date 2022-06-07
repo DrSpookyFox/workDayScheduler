@@ -18,7 +18,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -29,11 +30,20 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <div id="hour" class="hour row card">
+        <div class="col-2"></div>
+        <div class ="col-8" id="newTask">
+            <ul id="tasks">
+            </ul>
+        </div>
+        <div class= "col-2">
+            <button id="button" type="button" class="btn btn-save">Save Task</button>
+        </div>
+    </div>
     </div>
 
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
 </html>
-`
